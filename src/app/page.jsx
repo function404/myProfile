@@ -1,32 +1,34 @@
-'use client';
-6
-import Image from 'next/image'
+"use client";
+
+import Header from '../components/Header.jsx';
 
 import './globals.css';
 
-import PropagateLoader from "react-spinners/PropagateLoader";
-import { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
+import PropagateLoader from 'react-spinners/PropagateLoader'
+
 
 export default function Home() {
-
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2000);
   }, []);
 
   return (
-    <main>
+    <main className='main'>
       {loading ? 
-        <div className="loading">
-          <PropagateLoader color={"#fff"} loading={loading} size={10} />
+        <div className='loading'>
+          <PropagateLoader color={'#ffffff'} loading={loading} size={15} />
         </div>
         :
-        <div className="container">
-          <h1>Hello</h1>
-        </div>
+         <div className='container-index'>
+          <h1>Olá</h1>
+          <Header />
+         </div>  
       }
     </main>
   )
