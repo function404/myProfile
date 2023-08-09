@@ -6,13 +6,17 @@ export default function Header() {
   return (
     <header>
       <div className="main-img">
+        <div className="text-overlay b">
+          <h1>
+            I am
+          </h1>
+        </div>
         <div className="text-overlay">
-          <h1>I am Function404</h1>
+          <h1>Function404</h1>
         </div>
         <div className="text-subtitle">
           <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
-            necessitatibus!
+           Dedicated to Programming Studies and Front-end Development
           </h4>
         </div>
       </div>

@@ -26,7 +26,6 @@ export default function Home() {
         </div>
         :
          <div className='container-index'>
-          <h1>Olá</h1>
           <Header />
          </div>  
       }

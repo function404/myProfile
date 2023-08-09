@@ -2,6 +2,8 @@
   --color-primary: rgb(0, 194, 204);
   --color-white: rgb(255, 255, 255);
   --color-black: rgb(0, 0, 0,);
+
+  --color-light: rgba(255, 255, 255, .6);
 }
 
 * {
@@ -30,7 +32,13 @@ main{
   align-items: center;
 }
 
-
+header{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 main h1.k{
