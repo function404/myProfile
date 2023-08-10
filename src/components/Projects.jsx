@@ -28,7 +28,7 @@ export default function Projects() {
                   draggable='false'
                   dragstart='false'
                   src='/img/m-info.png'
-                  alt='err'
+                  alt='erro'
                 />
               </a>
             </button>
