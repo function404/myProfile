@@ -53,7 +53,7 @@ export default function Projects() {
                   draggable='false'
                   dragstart='false;'
                   src='/img/sresra.png'
-                  alt='err'
+                  alt='erro'
                 />
               </a>
             </button>
