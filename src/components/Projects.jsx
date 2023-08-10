@@ -1,6 +1,6 @@
 'use client';
 
-import '../style/projects/Projects.css';
+import '../style/projects/projects.css';
 
 export default function Projects() {
   return (
