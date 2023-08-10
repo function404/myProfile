@@ -15,7 +15,7 @@ export default function Projects() {
               <span>Museum of Informatics</span>
             </div>
             <div className='info-cards'>
-              'Website developed for work purposes (course).'
+              Website developed for work purposes (course).
             </div>
             <button id='btn-1' className='button-cards'>
               <a
@@ -37,10 +37,10 @@ export default function Projects() {
           </div>
           <div className='cards'>
             <div className='titleProjects'>
-              <span>Sr. & Sra. Bem Estar</span>
+              <span>{'Sr. & Sra. Bem Estar'}</span>
             </div>
             <div className='info-cards'>
-              'Website developed for work purposes (course).'
+              Website developed for work purposes (course).
             </div>
             <button id='btn-1' className='button-cards'>
               <a
@@ -65,7 +65,7 @@ export default function Projects() {
               <span>Nova Lira Festas e Eventos</span>
             </div>
             <div className='info-cards'>
-              'Website developed for the salon Nova Lira Festas e Eventos'
+              Website developed for the salon Nova Lira Festas e Eventos
             </div>
             <button id='btn-1' className='button-cards'>
               <a
@@ -90,7 +90,7 @@ export default function Projects() {
               <span>Personal Website</span>
             </div>
             <div className='info-cards'>
-              'My portfolio.'
+              My portfolio.
             </div>
             <button id='btn-1' className='button-cards'>
               <a
