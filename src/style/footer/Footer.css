@@ -1,0 +1,27 @@
+footer{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(at 100% 90%, rgba(0, 194, 204, .3), transparent 50%), radial-gradient(at 0% 100%, rgba(0, 194, 204, .3), transparent 50%);
+}
+
+h5{
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    color: var(--color-white);
+}
+
+footer a{
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+}
+
+footer a:hover{
+    color: var(--color-primary);
+    transition: all .3s ease-in-out;
+}
