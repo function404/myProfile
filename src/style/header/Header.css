@@ -30,7 +30,7 @@
 h1 {
   display: flex;
   color:  var(--color-white);
-  font-size: 150px;
+  font-size: 135px;
   font-weight: 900;
   text-transform: uppercase;
   opacity: 0;
@@ -49,7 +49,7 @@ h1 {
 h3 {
   display: flex;
   color:  var(--color-white);
-  font-size: 110px;
+  font-size: 100px;
   font-weight: 900;
   text-transform: uppercase;
   opacity: 0;
@@ -68,7 +68,7 @@ h3 {
 h4 {
   display: flex;
   color:  var(--color-white);
-  font-size: 25px;
+  font-size: 20px;
   opacity: 0;
   animation: fade 0.01s ease-out 1.75s forwards;
 }
