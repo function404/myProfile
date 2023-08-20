@@ -121,8 +121,7 @@ export default function Projects({children, width = "fit-content"}){
               <button id='btn-1' className='button-cards'>
                 <a
                   data-tooltip='Clique na Imagem'
-                  href='https://function404.netlify.app'
-                  target='_blank'
+                  href='#header'
                 >
                   <img
                     className='img-cards'
