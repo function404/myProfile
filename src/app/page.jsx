@@ -27,11 +27,11 @@ export default function Home() {
           <PropagateLoader color={'#fff'} loading={loading} size={15} />
         </div>
         :
-         <div className='container-index'>
+        <div className='container-index'>
           <Header />
           <Projects />
           <Footer />
-         </div>  
+        </div>  
       }
     </main>
   )
