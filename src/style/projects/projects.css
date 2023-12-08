@@ -17,8 +17,6 @@
   font-size: 72px;  
   font-family: 'Poppins', sans-serif;
   margin-bottom: 80px;
-  border-bottom: 1px solid var(--color-primary);
-  padding-bottom: 10px;
   -webkit-text-stroke: 0.2vw var(--color-primaryimg);
   text-transform: uppercase;
   letter-spacing: 5px;
