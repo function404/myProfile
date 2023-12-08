@@ -1,3 +1,28 @@
+.rain-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+@keyframes rainAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+.rain-container .rain{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  animation-name: rainAnimation;
+  animation-duration: 2s;
+  animation-delay: var(--rain-delay);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 .main-img {
   border-radius: 5%;
   position: relative;
