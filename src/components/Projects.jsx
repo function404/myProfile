@@ -1,9 +1,7 @@
 'use client';
 
-
 import '../style/projects/projects.css';
 import { useEffect, useRef } from 'react';
-
 import { motion, useInView, useAnimation } from 'framer-motion';
 
 export default function Projects({children, width = "fit-content"}){

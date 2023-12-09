@@ -3,7 +3,6 @@
 import '../style/footer/Footer.css';
 import anoAtual from '../components/function/date.jsx';
 
-
 export default function Footer() {
   return (
     <footer>
