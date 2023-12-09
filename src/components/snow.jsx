@@ -10,7 +10,7 @@ export default function Snow() {
                 color="white"
                 wind={[-0, 0]}
                 snowflakeCount={120}
-                style={{height: '100%', width: '100%',}}
+                style={{height: '100%', width: '100%'}}
             />
         </div>
     )
