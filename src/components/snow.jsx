@@ -6,6 +6,7 @@ export default function Snow() {
         <div>
             <Snowfall 
                 color="white"
+                wind={[-0, 0]}
                 snowflakeCount={150}
                 style={{height: '100%', width: '100%',}}
             />
