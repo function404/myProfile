@@ -6,7 +6,8 @@ import PropagateLoader from 'react-spinners/PropagateLoader'
 import Header from '../components/Header.jsx';
 import Projects from '../components/Projects.jsx';
 import Footer from '../components/Footer.jsx';
-import Snow from '../components/Snow.jsx';
+
+import Snow from '../components/snow.jsx';
 
 import './globals.css';
 

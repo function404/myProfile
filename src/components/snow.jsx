@@ -3,7 +3,7 @@
 import React from 'react';
 import Snowfall from 'react-snowfall';
 
-const Snow = () => {
+export default function Snow(){
     return (
       <div>
         <Snowfall
@@ -17,5 +17,3 @@ const Snow = () => {
       </div>
     );
   };
-  
-  export default Snow;
