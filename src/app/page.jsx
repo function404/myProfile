@@ -3,10 +3,10 @@
 import React, {useEffect, useState} from 'react';
 import PropagateLoader from 'react-spinners/PropagateLoader'
 
-import Header from '../components/Header';
-import Projects from '../components/Projects';
-import Footer from '../components/Footer';
-import Snow from '../components/Snow';
+import Header from '../components/Header.jsx';
+import Projects from '../components/Projects.jsx';
+import Footer from '../components/Footer.jsx';
+import Snow from '../components/Snow.jsx'
 
 import './globals.css';
 

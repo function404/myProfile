@@ -11,6 +11,7 @@
   "dependencies": {
     "@fortawesome/react-fontawesome": "github:fortawesome/react-fontawesome",
     "@nextui-org/react": "^2.1.3",
+    "build": "^0.1.4",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.13",
     "framer-motion": "^10.15.1",
