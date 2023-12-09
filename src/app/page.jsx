@@ -3,7 +3,7 @@
 import Header from '../components/Header.jsx';
 import Projects from '../components/Projects.jsx';
 import Footer from '../components/Footer.jsx';
-import Snow from '../components/Snow.jsx';
+import Snow from '../components/Snow.jsx'
 
 import './globals.css';
 
