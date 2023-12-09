@@ -3,12 +3,8 @@
 import '../style/header/Header.css';
 
 export default function Header() {
-
-
-
   return (
     <header id='header'>
-      
       <div className='main-img'>
         <div className='text-overlay b'>
           <div className='swipe'>
