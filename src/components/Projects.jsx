@@ -1,14 +1,16 @@
 'use client';
 
 import '../style/projects/projects.css';
+import React from "react";
 import { useEffect, useRef } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
+import { Button, UncontrolledTooltip } from "reactstrap";
 
 export default function Projects({children, width = "fit-content"}){
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true});
 
-  const mainControls = useAnimation();
+  const mainControls = useAnimation(); 
 
   useEffect(() => {
     if(isInView) {
@@ -17,7 +19,7 @@ export default function Projects({children, width = "fit-content"}){
   }, [isInView]);
 
   return (
-    <div ref={ref} style={{position: "relative", width}}>
+    <div ref={ref} style={{position: "relative", alignItems:'center',}}>
       <motion.div 
         className='main'
         variants={{
@@ -34,7 +36,7 @@ export default function Projects({children, width = "fit-content"}){
           </div>
         <div className='container'>
           <div className='content'>
-            <div className='cards'>
+            {/* <div className='cards'>
               <div className='titleProjects'>
                 <span>Museum of Informatics</span>
               </div>
@@ -43,7 +45,6 @@ export default function Projects({children, width = "fit-content"}){
               </div>
               <button id='btn-1' className='button-cards'>
                 <a
-                  data-tooltip='Clique na Imagem'
                   href='https://museuinfo.netlify.app/'
                   target='_blank'
                 >
@@ -56,9 +57,9 @@ export default function Projects({children, width = "fit-content"}){
                   />
                 </a>
               </button>
-              {/*<div className='info-buttom-cards'><i className='fa-solid fa-circle-info'></i>  Clique na imagem para vizualizar o projeto</div>*/}
+              <div className='info-buttom-cards'><i className='fa-solid fa-circle-info'></i>  Clique na imagem para vizualizar o projeto</div>
               <div className='borderBottom'></div>
-            </div>
+            </div> */}
             <div className='cards'>
               <div className='titleProjects'>
                 <span>{'Sr. & Sra. Bem Estar'}</span>
@@ -66,22 +67,28 @@ export default function Projects({children, width = "fit-content"}){
               <div className='info-cards'>
                 Website developed for work purposes (course).
               </div>
-              <button id='btn-1' className='button-cards'>
-                <a
-                  data-tooltip='Clique na Imagem'
-                  href='https://sresrabemestar.000webhostapp.com/'
-                  target='_blank'
+                <Button id='btn-1' className='button-cards' data-placement="bottom" >
+                  <a
+                    href='https://sresrabemestar.000webhostapp.com/'
+                    target='_blank'
+                  >
+                      <img
+                        className='img-cards'
+                        draggable='false'
+                        dragstart='false;'
+                        src='/img/sresra.png'
+                        alt='erro'
+                      />
+                  </a>
+                </Button>
+                <UncontrolledTooltip
+                  delay={0}
+                  placement="bottom"
+                  target="btn-1"
                 >
-                  <img
-                    className='img-cards'
-                    draggable='false'
-                    dragstart='false;'
-                    src='/img/sresra.png'
-                    alt='erro'
-                  />
-                </a>
-              </button>
-              {/*<div className='info-buttom-cards'><i className='fa-solid fa-circle-info'></i>  Clique na imagem para vizualizar o projeto</div> */}
+                  <i className='fa-solid fa-circle-info'></i> Clique na imagem para vizualizar o projeto
+                </UncontrolledTooltip>
+              <div className='info-buttom-cards'><i className='fa-solid fa-circle-info'></i>  Clique na imagem para vizualizar o projeto</div>
               <div className='borderBottom'></div>
             </div>
             <div className='cards'>
@@ -91,9 +98,8 @@ export default function Projects({children, width = "fit-content"}){
               <div className='info-cards'>
                 Website developed for the salon Nova Lira Festas e Eventos
               </div>
-              <button id='btn-1' className='button-cards'>
+              <Button id='btn-2' className='button-cards' data-placement="bottom">
                 <a
-                  data-tooltip='Clique na Imagem'
                   href='https://novalira.netlify.app/'
                   target='_blank'
                 >
@@ -105,8 +111,15 @@ export default function Projects({children, width = "fit-content"}){
                     alt='err'
                   />
                 </a>
-              </button>
-              {/* <div className='info-buttom-cards'><i className='fa-solid fa-circle-info'></i>  Clique na imagem para vizualizar o projeto</div> */}
+              </Button>
+              <UncontrolledTooltip
+                  delay={0}
+                  placement="bottom"
+                  target="btn-2"
+                >
+                  <i className='fa-solid fa-circle-info'></i> Clique na imagem para vizualizar o projeto
+                </UncontrolledTooltip>
+              <div className='info-buttom-cards'><i className='fa-solid fa-circle-info'></i>  Clique na imagem para vizualizar o projeto</div>
               <div className='borderBottom'></div>
             </div>
             <div className='cards'>
@@ -116,9 +129,8 @@ export default function Projects({children, width = "fit-content"}){
               <div className='info-cards'>
                 My portfolio.
               </div>
-              <button id='btn-1' className='button-cards'>
+              <Button id='btn-3' className='button-cards' data-placement="bottom">
                 <a
-                  data-tooltip='Clique na Imagem'
                   href='#header'
                 >
                   <img
@@ -129,8 +141,15 @@ export default function Projects({children, width = "fit-content"}){
                     alt='err'
                   />
                 </a>
-              </button>
-              {/*<div className='info-buttom-cards'><i className='fa-solid fa-circle-info'></i>  Clique na imagem para vizualizar o projeto</div> */}
+              </Button>
+              <UncontrolledTooltip
+                  delay={1}
+                  placement="bottom"
+                  target="btn-3"
+                >
+                  <i className='fa-solid fa-circle-info'></i> Clique na imagem para vizualizar o projeto
+                </UncontrolledTooltip>
+              <div className='info-buttom-cards'><i className='fa-solid fa-circle-info'></i>  Clique na imagem para vizualizar o projeto</div>
               <div className='borderBottom'></div>
             </div>
           </div>
