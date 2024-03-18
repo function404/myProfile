@@ -1,7 +1,7 @@
 'use client';
 
 import '../style/footer/Footer.css';
-import anoAtual from '../components/function/date.jsx';
+import anoAtual from '../function/date.jsx';
 
 export default function Footer() {
   return (
