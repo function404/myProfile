@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import '../style/projects/projects.css';
-import React from "react";
-import { useEffect, useRef } from 'react';
+import React,  { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { Button, UncontrolledTooltip } from "reactstrap";
 
@@ -16,7 +16,7 @@ export default function Projects({children, width = "fit-content"}){
     if(isInView) {
       mainControls.start('visible');
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
 
   return (
     <div ref={ref} style={{position: "relative", alignItems:'center',}}>
