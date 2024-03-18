@@ -121,7 +121,7 @@ h4 {
     border-radius: 100%;
     background: url('/img/meR.png') no-repeat center;
     border: 1px solid var(--color-primaryimg);
-    animation: opacity 4s ease-out;
+    animation: opacity 4s ease;
   }
   
   .main-responsive{
