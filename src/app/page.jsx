@@ -12,29 +12,30 @@ import Footer from '../components/Footer.jsx';
 import './globals.css';
 
 export default function Home() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setLoading(false);
     }, 2222);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <main className='main'>
-      {loading ? 
+      {loading ? ( 
         <div className='loading'>
           <PropagateLoader color={'#fff'} loading={loading} size={15} />
         </div>
-        :
+       ) : (
         <div className='container-index'>
           <Header />
           <Projects />
           <Footer />
           {/* <Snow /> */}
         </div>  
-      }
+      )}
     </main>
-  )
+  );
 }

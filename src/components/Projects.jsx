@@ -6,7 +6,7 @@ import React,  { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { Button, UncontrolledTooltip } from "reactstrap";
 
-export default function Projects({children, width = "fit-content"}){
+export default function Projects({children}){
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true});
 
