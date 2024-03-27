@@ -4,7 +4,9 @@
 import '../style/projects/projects.css';
 import React,  { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from 'framer-motion';
-import { Button, UncontrolledTooltip } from "reactstrap";
+import { Button } from "reactstrap";
+
+import Datatooltip from "../components/datatootip";
 
 export default function Projects({children}){
   const ref = useRef(null);
@@ -69,6 +71,9 @@ export default function Projects({children}){
               </div>
                 <Button id='btn-1' className='button-cards' data-placement="bottom" >
                   <a
+                    data-tooltip-place="bottom"
+                    data-tooltip-id="tooltip-1"
+                    data-tooltip-content="Clique na imagem para vizualizar o projeto"
                     href='https://sresrabemestar.000webhostapp.com/'
                     target='_blank'
                   >
@@ -81,13 +86,8 @@ export default function Projects({children}){
                       />
                   </a>
                 </Button>
-                <UncontrolledTooltip
-                  delay={0}
-                  placement="bottom"
-                  target="btn-1"
-                >
+
                   <i className='fa-solid fa-circle-info'></i> Clique na imagem para vizualizar o projeto
-                </UncontrolledTooltip>
               <div className='info-buttom-cards'><i className='fa-solid fa-circle-info'></i>  Clique na imagem para vizualizar o projeto</div>
               <div className='borderBottom'></div>
             </div>
@@ -100,6 +100,9 @@ export default function Projects({children}){
               </div>
               <Button id='btn-2' className='button-cards' data-placement="bottom">
                 <a
+                  data-tooltip-place="bottom"
+                  data-tooltip-id="tooltip-2"
+                  data-tooltip-content="Clique na imagem para vizualizar o projeto"
                   href='https://novalira.netlify.app/'
                   target='_blank'
                 >
@@ -112,13 +115,7 @@ export default function Projects({children}){
                   />
                 </a>
               </Button>
-              <UncontrolledTooltip
-                  delay={0}
-                  placement="bottom"
-                  target="btn-2"
-                >
                   <i className='fa-solid fa-circle-info'></i> Clique na imagem para vizualizar o projeto
-                </UncontrolledTooltip>
               <div className='info-buttom-cards'><i className='fa-solid fa-circle-info'></i>  Clique na imagem para vizualizar o projeto</div>
               <div className='borderBottom'></div>
             </div>
@@ -131,6 +128,9 @@ export default function Projects({children}){
               </div>
               <Button id='btn-3' className='button-cards' data-placement="bottom">
                 <a
+                  data-tooltip-place="bottom"
+                  data-tooltip-id="tooltip-3"
+                  data-tooltip-content="Clique na imagem para vizualizar o projeto"
                   href='#header'
                 >
                   <img
@@ -142,19 +142,14 @@ export default function Projects({children}){
                   />
                 </a>
               </Button>
-              <UncontrolledTooltip
-                  delay={1}
-                  placement="bottom"
-                  target="btn-3"
-                >
                   <i className='fa-solid fa-circle-info'></i> Clique na imagem para vizualizar o projeto
-                </UncontrolledTooltip>
               <div className='info-buttom-cards'><i className='fa-solid fa-circle-info'></i>  Clique na imagem para vizualizar o projeto</div>
               <div className='borderBottom'></div>
             </div>
           </div>
         </div>
       </motion.div>
+      <Datatooltip />
     </div>
   );
 }

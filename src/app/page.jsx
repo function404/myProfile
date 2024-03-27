@@ -17,13 +17,13 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2222);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <main className='main'>
+    <main>
       {loading ? ( 
         <div className='loading'>
           <PropagateLoader color={'#fff'} loading={loading} size={15} />
