@@ -7,7 +7,7 @@ import Header from '../components/Header.jsx';
 import Projects from '../components/Projects.jsx';
 import Footer from '../components/Footer.jsx';
 
-// import Snow from '../components/snow.jsx';
+import Snow from '../components/snow.jsx';
 
 import './globals.css';
 
@@ -33,7 +33,7 @@ export default function Home() {
           <Header />
           <Projects />
           <Footer />
-          {/* <Snow /> */}
+          <Snow />
         </div>  
       )}
     </main>
