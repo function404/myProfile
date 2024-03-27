@@ -86,8 +86,6 @@ export default function Projects({children}){
                       />
                   </a>
                 </Button>
-
-                  <i className='fa-solid fa-circle-info'></i> Clique na imagem para vizualizar o projeto
               <div className='info-buttom-cards'><i className='fa-solid fa-circle-info'></i>  Clique na imagem para vizualizar o projeto</div>
               <div className='borderBottom'></div>
             </div>
@@ -115,7 +113,6 @@ export default function Projects({children}){
                   />
                 </a>
               </Button>
-                  <i className='fa-solid fa-circle-info'></i> Clique na imagem para vizualizar o projeto
               <div className='info-buttom-cards'><i className='fa-solid fa-circle-info'></i>  Clique na imagem para vizualizar o projeto</div>
               <div className='borderBottom'></div>
             </div>
@@ -142,7 +139,6 @@ export default function Projects({children}){
                   />
                 </a>
               </Button>
-                  <i className='fa-solid fa-circle-info'></i> Clique na imagem para vizualizar o projeto
               <div className='info-buttom-cards'><i className='fa-solid fa-circle-info'></i>  Clique na imagem para vizualizar o projeto</div>
               <div className='borderBottom'></div>
             </div>
